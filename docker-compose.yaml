@@ -3,12 +3,11 @@ version: "3.9"
 services:
   app:
     build:
-      context: .
       dockerfile: ./Dockerfile
     command:
       - gunicorn
       - --bind
-      - djangoProject.wsgi
+      - mysite.wsgi
       - "0.0.0.0:8000"
     ports:
       - "8000:8000"
@@ -21,4 +20,4 @@ services:
         max-file: "20"
         max-size: "200k"
     volumes:
-      - ./djangoProject/database:/app/database
+      - ./mysite/database:/app/database
