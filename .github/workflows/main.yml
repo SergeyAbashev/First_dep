@@ -6,7 +6,7 @@ on:
 env:
   SERVER_HOST: 158.160.13.181
   SERVER_USER: sergey_abashev
-  SERVER_PATH: /sergey_abashev/github-deploy
+  SERVER_PATH: /projects/deploy_github
 
 jobs:
 
