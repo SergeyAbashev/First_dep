@@ -125,9 +125,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CACHES = {
     "default": {
-        # "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
-        # "LOCATION": "/var/tmp/django_cache",
-        "BACKEND": "django.core.cache.backends.dummy.DummyCache",
+        "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
+        "LOCATION": "/var/tmp/django_cache",
+        # "BACKEND": "django.core.cache.backends.dummy.DummyCache",
     }
 }
 CACHE_MIDDLEWARE_SECONDS = 200
